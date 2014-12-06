@@ -1,0 +1,91 @@
+.posts
+  padding: 0 0 5vw 0
+  text-align: center
+
+  &.grid
+    article
+      position: relative
+      display: inline-block
+      margin: 1em
+      padding: .1875in .25in 0 .25in
+      vertical-align: top
+      -moz-box-shadow:    2px 2px 12px rgba(gray, 0.25)
+      -webkit-box-shadow: 2px 2px 12px rgba(gray, 0.25)
+      box-shadow:         2px 2px 12px rgba(gray, 0.25)
+
+      @media only screen and (max-width: 400px)
+        margin: 0
+        -webkit-transform: scale(.9)
+        transform: scale(.9)
+
+      @media only screen and (max-width: 355px)
+        margin: 0 0 0 -1%
+
+      @media only screen and (max-width: 345px)
+        margin: 0 0 0 -2%
+
+      @media only screen and (max-width: 335px)
+        margin: 0 0 0 -3%
+
+      @media only screen and (max-width: 330px)
+        margin: 0 0 0 -4%
+
+      @media only screen and (max-width: 320px)
+        margin: 0 0 0 -5%
+
+      .polaroid
+        background: black
+
+        &:not(:first-of-type)
+          display: none
+
+        &:first-of-type
+          width: 3.1875in
+          height 3.125in
+          overflow: hidden
+
+          img
+            width: 100%
+
+      .caption
+        text-align: right
+        height: 0.8125in
+
+        p:nth-of-type(n + 2), .content
+          display: none
+
+  &.single-post article
+    display: inline-block
+    width: 90%
+
+    @media only screen and (max-width: 340px)
+      width: inherit
+
+    .polaroid
+      display: inline-block
+      width: 150px
+
+      img
+        width: 100%
+
+    .caption
+      padding: 0 .75em
+
+      p:first-of-type
+        font-size: 2em
+
+      .date
+        font-style: italic
+
+      .content
+        text-align: left
+
+        .header
+          font-size: 1.25em
+          font-weight: 700
+
+        p
+          font-size: 1em
+
+        ul li
+          list-style: none

@@ -1,0 +1,15 @@
+include ../node_modules/jumblr/lib/jumblr
+
++jumblrStrList({'IndexPage': 'grid', 'PermalinkPage': 'single-post'})
+section(class="posts "+jumblrStrList)
+  +jumblr('Posts')
+    article(id="{PostID}" class="{PostType}")
+      +jumblr('Photoset')
+        +jumblr('Photos')
+          .polaroid
+            a(href="{Permalink}")
+              img(src="{PhotoURL-500}" data-highres="{PhotoURL-HighRes}" alt="{PhotoAlt}")
+        
+        +jumblr('Caption')
+          .caption
+            | {Caption}

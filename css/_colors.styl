@@ -1,0 +1,64 @@
+.color
+  position: absolute
+  height: 30em
+  width: 3em
+  border-radius: 9999px
+  z-index: -1
+
+  &:first-of-type
+    top: -26.5em
+    right: 0
+    background: blue
+
+  &:nth-of-type(2)
+    top: -21.5em
+    right: 6em
+    background: tan
+
+  &:nth-of-type(3)
+    top: -24.5em
+    right: 9em
+    background: red
+
+  &:nth-of-type(4)
+    top: -23.5em
+    right: 3em
+    background: green
+
+  &:nth-of-type(5)
+    top: -27.5em
+    right: 12em
+    background: maroon
+
+  @media only screen and (min-width: 415px)
+    &:first-of-type
+      right: 3em
+
+    &:nth-of-type(2)
+      right: 9em
+
+    &:nth-of-type(3)
+      right: 12em
+
+    &:nth-of-type(4)
+      right: 6em
+
+    &:nth-of-type(5)
+      right: 15em
+
+
+  @media only screen and (min-width: 900px)
+    &:first-of-type
+      right: 7em
+
+    &:nth-of-type(2)
+      right: 13em
+
+    &:nth-of-type(3)
+      right: 16em
+
+    &:nth-of-type(4)
+      right: 10em
+
+    &:nth-of-type(5)
+      right: 19em

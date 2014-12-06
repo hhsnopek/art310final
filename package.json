@@ -1,0 +1,13 @@
+{
+  "name": "art310",
+  "author": "Henry Snopek <hhsnopek@gmail.com>",
+  "description": "ART310 Final Project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hhsnopek/art310.git"
+  },
+  "dependencies": {
+    "jumblr": "0.1.x"
+  },
+  "private": true
+}
