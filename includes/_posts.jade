@@ -7,7 +7,11 @@ section(class="posts "+jumblrStrList)
       +jumblr('Photoset')
         +jumblr('Photos')
           .polaroid
-            a(href="{Permalink}")
+            +jumblr('IndexPage')
+              a(href="{Permalink}")
+                img(src="{PhotoURL-500}" data-highres="{PhotoURL-HighRes}" alt="{PhotoAlt}")
+            
+            +jumblr('PermalinkPage')
               img(src="{PhotoURL-500}" data-highres="{PhotoURL-HighRes}" alt="{PhotoAlt}")
         
         +jumblr('Caption')

@@ -9,3 +9,15 @@ html
     include includes/_nav
     include includes/_header
     include includes/_posts
+  
+  script(src="https://s3.amazonaws.com/misc-scripts/zepto.min.js")
+  script(type="text/javascript")
+    :coffee
+      window.onload = ->
+        if window.location.pathname.split('/')[1] is "post"
+          $('.polaroid').on 'click', (e) ->
+            target = $(e.target)
+            if target.hasClass 'polaroid'
+              target.toggleClass('fullscreen')
+            else
+              target.parent().toggleClass('fullscreen')
