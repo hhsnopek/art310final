@@ -7,7 +7,7 @@
     "url": "https://github.com/hhsnopek/art310.git"
   },
   "dependencies": {
-    "jumblr": "0.1.x"
+    "jumblr": "~1.0.0"
   },
   "private": true
 }
